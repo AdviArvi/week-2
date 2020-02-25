@@ -17,14 +17,16 @@
         console.log(num);
       }        
   }
-
+ const dualDivisibleNumbers=[];
  function checkArray ()
     {
         for(num of numbers)
         {
-          if (fizzBuzz(num))
+          if (fizzbuzz(num))
           {
-            console.log("FizzBuzz");
+            console.log("Fizz Buzz");            
+            dualDivisibleNumbers.push(num);
+            console.log(dualDivisibleNumbers);
           }
           else if(fizz(num))
           {
@@ -40,8 +42,9 @@
           }
         }
     }
+    
 
- function fizzBuzz(num)
+ function fizzbuzz(num)
     {      
         if (num%3===0&&num%5===0)
             {
@@ -61,7 +64,7 @@
             }
         else
             {
-                return false;
+            return false;
             }
     }
     
@@ -73,24 +76,11 @@
             }
         else
             {
-                return false;
+            return false;
             }
     }
-
+       
     
-    
-        
-    const dualDivisibleNumbers=[];       
-    
-        for (num of numbers)
-        {
-          if (fizzBuzz(num))
-          {
-            dualDivisibleNumbers.push(num);
-          }
-        
-        }
-        console.log(dualDivisibleNumbers);
     
     
         
