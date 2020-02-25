@@ -79,18 +79,23 @@
 
     
     
-        const dualDivisibleNumbers=[];
-         for(let i=0;i<=numbers.length;i++)
+        
+    const dualDivisibleNumbers=[];       
+    
+        for (num of numbers)
         {
-            if(i%3===0 && i%5===0)
-            {
-                dualDivisibleNumbers.push(numbers[i]);
-            }
+          if (fizzBuzz(num))
+          {
+            dualDivisibleNumbers.push(num);
+          }
+        
         }
         console.log(dualDivisibleNumbers);
-
+    
+    
+        
     
 
-
+   
 
 
