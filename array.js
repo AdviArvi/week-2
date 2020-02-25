@@ -1,69 +1,82 @@
 
-const numbers=[];
-for(let i=0;i<=100;i++)
+ const numbers=[];
+ for(let i=0;i<=100;i++)
    {
      numbers.push(i);
    }
 
-function insertNumbersInArray()
+ function logArray()
    {
-     console.log(numbers);
-    
+     console.log(numbers);    
    }
 
-function contentOfArray()
+ function contentOfArray()
   {
     for(num of numbers)
       {
         console.log(num);
-      }
-        
+      }        
   }
 
-  function checkArray (numbers)
+ function checkArray ()
     {
-        for (let num=0;num<=100;num++)
+        for(num of numbers)
         {
-          if (num%3===0&&num%5===0)
-            {
-            console.log("FizzBuzz");
-            }
-          else if(num%3===0)
-            {
+          if (fizzBuzz(num))
+          {
+              console.log("FizzBuzz");
+          }
+          else if(fizz(num))
+          {
             console.log("Fizz");
-            }
-          else if(num%5===0)
-            {
+          }
+          else if(buzz(num))
+          {
             console.log("Buzz");
-            }
-            else
-            {
-                console.log(num);
-            }
+          }
+          else
+          {
+              console.log(num);
+          }
         }
     }
 
-// function checkArray()
-// {
-//     const result=numbers.map(num=>{
-//         if (num%15===0)
-//         {
-//             console.log("BuzzFizz");
-//         }
-//         else if(num%5===0)
-//         {
-//             console.log("Buzz");
-//         }
-//         else if(num%3===0)
-//         {
-//             console.log("Fizz");
-//         }
-//         else 
-//         {
-//             console.log(num);
-//         }
-//     });
+ function fizzBuzz(num)
+    {      
+        if (num%3===0&&num%5===0)
+            {
+            return true;
+            }
+        else
+            {
+                return false;
+            }    
+    }        
     
-// }
+ function fizz(num)
+    {
+        if (num%3===0)
+            {
+            return true;
+            }
+        else
+            {
+                return false;
+            }
+    }
+    
+ function buzz(num)
+    {
+        if (num%5===0)
+            {
+            return true;
+            }
+        else
+            {
+                return false;
+            }
+    }
+
+
 
 
