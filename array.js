@@ -24,7 +24,7 @@
         {
           if (fizzBuzz(num))
           {
-              console.log("FizzBuzz");
+            console.log("FizzBuzz");
           }
           else if(fizz(num))
           {
@@ -36,7 +36,7 @@
           }
           else
           {
-              console.log(num);
+            console.log(num);
           }
         }
     }
@@ -76,6 +76,20 @@
                 return false;
             }
     }
+
+    
+    
+        const dualDivisibleNumbers=[];
+         for(let i=0;i<=numbers.length;i++)
+        {
+            if(i%3===0 && i%5===0)
+            {
+                dualDivisibleNumbers.push(numbers[i]);
+            }
+        }
+        console.log(dualDivisibleNumbers);
+
+    
 
 
 
