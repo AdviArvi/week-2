@@ -7,7 +7,7 @@ numbers.push(i);
 
 function createArray()
 {
-console.log(numbers);
+console.log(numbers)
     
 }
 
