@@ -1,20 +1,22 @@
 
-var array=[];
+const numbers=[];
+for(let i=0;i<=100;i++)
+{
+numbers.push(i);
+}
 
 function createArray()
 {
-    console.log(array);
-    return array;
+console.log(numbers);
+    
 }
 
-function addElement()
+function contentOfArray()
 {
-    for(let i=0;i<=100;i++)
-        {
-            array.push(i)
-            
-        }
-        console.log(array);
+    for(num in numbers)
+    {
+        console.log(num);
+    }
         
 }
 
