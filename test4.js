@@ -14,7 +14,7 @@ let addUser=()=>
                  };
 
     users.push(person);
-    console.log(users);
+    console.table(users);
 
 }
 
