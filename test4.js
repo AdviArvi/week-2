@@ -1,4 +1,4 @@
-let button=document.getElementById('submit');
+let button=document.querySelector('.button');
 
 let fname;
 let lname;
