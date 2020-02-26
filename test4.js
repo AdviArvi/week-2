@@ -1,8 +1,6 @@
 let button=document.querySelector('.button');
 
-let fname;
-let lname;
-let bdate;
+
 let users=[];
 
 //function for creating an object and add into an array
