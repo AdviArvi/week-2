@@ -6,7 +6,7 @@ import {modulus} from './modulus.js';
 
 const butts=document.querySelector(".button");    
 
-function calculate() 
+function calculate()
 {
   let n1 = parseInt(document.getElementById("num1").value);
   console.log(n1);
