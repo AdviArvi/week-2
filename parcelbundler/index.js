@@ -16,7 +16,7 @@ export function calculate()
     
      if(isNaN(n1)||isNaN(n2))
         {
-          console.error("Enter valid number");
+          console.warn("Enter valid number");
         }
 
      else if (oper === "+") 
