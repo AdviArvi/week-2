@@ -1,0 +1,22 @@
+{
+  "name": "parcelbundler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "array.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdviArvi/week-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdviArvi/week-2/issues"
+  },
+  "homepage": "https://github.com/AdviArvi/week-2#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
